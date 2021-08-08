@@ -29,17 +29,78 @@
 body {
   font-size: 1rem;
   font-family: 'Red Hat Display', sans-serif;
+  background-color: aquamarine;
+}
+
+main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
   max-width: 320px;
-  margin: 0 auto;
 }
 
 .card {
-  padding: 40px;
+  margin: 4rem auto;
+  box-shadow: 0 0.1875rem 0.625rem rgb(0 0 0 / 30%);
+  background-color: #fff;
+  border-radius: 1.25rem;
+}
+
+.card .main__header img {
+  width: 100%;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.card .main__header .main__header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.card .main__header .main__header__text h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card .main__header .main__header__text h1, p {
+  text-align: center;
+}
+
+.card .main__header .main__header__text p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--desaturated-blue);
+  padding: 0 1.25rem;
+}
+
+.card .main__section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  box-shadow: 0.1 0.1rem 0.1rem rgb(0 0 0 / 10%);
+  background-color: var(--very-pale-blue);
+  border-radius: 0.5rem;
+}
+
+.card .main__section .information {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .main__section h2 {
+  font-size: 0.9rem;
+  color: var(--dark-blue);
 }
 
 /* Media Queries (Boostrap breakpoints) */
