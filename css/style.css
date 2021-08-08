@@ -29,6 +29,17 @@
 body {
   font-size: 1rem;
   font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 40px;
 }
 
 /* Media Queries (Boostrap breakpoints) */
