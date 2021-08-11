@@ -122,12 +122,23 @@ main {
   font-size: 0.9rem;
 }
 
+.card .main__section span a:hover {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
 .card .main__section__payment-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
+
+.card .main__section__payment-buttons a,
+.card .main__section__payment-buttons a:visited{
+  text-decoration: none;
+}
+
 
 .card .main__section__payment-buttons .goToPayment {
   padding: 0.85rem 4rem;
@@ -140,6 +151,11 @@ main {
   font-weight: 700;
 }
 
+.card .main__section__payment-buttons .goToPayment:hover {
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
 .card .main__section__payment-buttons .cancelOrder {
   padding: 0.3rem 4rem 2rem 4rem;
   border: none;
@@ -148,6 +164,16 @@ main {
   color: var(--desaturated-blue);
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 700;
+}
+
+.card .main__section__payment-buttons .cancelOrder:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+:focus {
+  outline: 3px solid var(--bright-blue);
+  outline-offset: 5px;
 }
 
 /* Media Queries */
